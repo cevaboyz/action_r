@@ -1,7 +1,6 @@
 library(gmailr)
 library(googleAnalyticsR)
 library(googledrive)
-library(mockr)
 library(lubridate)
 library(scales)
 library(tidyverse)
