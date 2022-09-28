@@ -8,18 +8,18 @@ library(gt)
 library(googleAuthR)
 
 
-GMAIL_SERVICE <- Sys.getenv("GMAIL_SECRET_API")
+GMAIL_SECRET_API <- Sys.getenv("GMAIL_SECRET_API")
 
 GMAIL_ADDRESS <- Sys.getenv("GMAIL_ADDRESS")
 
 
 
-gmailr::gm_auth_configure(path = GMAIL_SERVICE ,
+gmailr::gm_auth_configure(path = GMAIL_SECRET_API ,
                           appname = "gmailr")
 
 
 gmailr::gm_auth(email = GMAIL_ADDRESS,
-                path = GMAIL_SERVICE,
+                path = GMAIL_SECRET_API,
                 scopes = "full")
 
 
